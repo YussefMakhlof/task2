@@ -13,7 +13,7 @@ void perimeterOfSquare(double length)=>print(length*4);
 
 void main(List<String> arguments) {
 //switch cases : program #1
-/*
+
   print('please enter the operation you want : ');
   var operation = stdin.readLineSync();
 
@@ -29,7 +29,7 @@ void main(List<String> arguments) {
     case '+':
       ;
       {
-       addFun(number1, number2);
+        addFun(number1, number2);
         print(addFun);
         break;
       }
@@ -60,10 +60,10 @@ void main(List<String> arguments) {
       }
       break;
   }
-*/
+
   // program #2 : square area and perimeter
-/*
-  var perimeter, area ;
+
+
 
   print('enter what is the process you want to be calculated : ');
   var process = stdin.readLineSync();
@@ -71,53 +71,52 @@ void main(List<String> arguments) {
   print('enter Length :');
   double? length = double.parse(stdin.readLineSync()!);
 
-switch(process){
-  case 'area': {areaOfSquare(length);}
+  switch (process) {
+    case 'area':
+      {
+        areaOfSquare(length);
+      }
 
-  break;
-  case ' perimeter':{perimeterOfSquare(length);}
-     break;
-  default:
-    {
-      print('This is default case');
-    }
-    break;
-
+      break;
+    case ' perimeter':
+      {
+        perimeterOfSquare(length);
+      }
+      break;
+    default:
+      {
+        print('This is default case');
+      }
+      break;
+  }
 
 // Multiplication table program #3
 
 
-  print('enter number');
-  int? numOfMultiplication = int.parse(stdin.readLineSync()!);
-  if(numOfMultiplication!=0){
-    for(var i=1;i<=12;i++){
-      print('$i x $numOfMultiplication = ${i*numOfMultiplication}');
-    }
+      print('enter number');
+      int? numOfMultiplication = int.parse(stdin.readLineSync()!);
+      if (numOfMultiplication != 0) {
+        for (var i = 1; i <= 12; i++) {
+          print('$i x $numOfMultiplication = ${i * numOfMultiplication}');
+        }
+      }
 
+
+      for (var i = 1; i <= 12; i++) {
+        for (var j = 1; j <= 12; j++) {
+          print('$i x $j = ${j * i }');
+        }
+      }
+
+// program #4 print string after 3 counted.
+      for (var i = 1; i <= 6; i++) {
+        dynamic name = 'The Godfather';
+        print('$name ');
+
+
+        for (var j = 1; j < 4; j++) {
+          print(j);
+        }
+      }
   }
 
-
-  for(var i=1; i<=12;i++){
-    for(var j=1;j<=12;j++){
-      print('$i x $j = ${j*i }');
-    }
-  }
-*/
-
-
-  for (var i = 1; i <= 6; i++) {
-
-    dynamic name='The Godfather';
-    print('$name ');
-
-
-    for (var j = 1; j < 4; j++) {
-
-
-      print(j);
-
-    }
-  }
-
-
-}
